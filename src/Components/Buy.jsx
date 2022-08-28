@@ -1,6 +1,5 @@
 import React from 'react'
 import BuyFunction from './BuyFunction'
-import BuyClass from './BuyClass'
 
 function Buy({name}) {
     
