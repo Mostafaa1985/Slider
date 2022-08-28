@@ -11,7 +11,7 @@ export default function BuyFunction({ name }) {
     return (
         <div>
             <span className='badge' onClick={handleClick}>Buy</span>
-            <p>function</p>
+            
         </div>
     )
 }
