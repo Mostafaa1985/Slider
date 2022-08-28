@@ -6,8 +6,7 @@ function Buy({name}) {
     
     return (
         <div className='badge-wrapper'>
-            <BuyFunction name={name} />
-            <BuyClass name={name} />
+            <BuyFunction name={name} />            
         </div>
     )
 }
