@@ -15,7 +15,7 @@ export default function Card({ hero }) {
             
             </CardItem>
 
-            <Buy name={hero.name}/>
+            <Buy name={hero.name} id={hero.id} />
             <UnitState units={hero.units} name={hero.name} />
         </div>
 
