@@ -17,7 +17,8 @@
                 "value": "cost"
             }
         ],
-        "img": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png"
+        "img": "./assets/barbarian.png",
+        "max": 669
     }, {
         "id": 2,
         "name": "archer",
@@ -36,7 +37,7 @@
                 "value": "cost"
             }
         ],
-        "img": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer.png"
+        "img": "./assets/archer.png"
     }, {
         "id": 3,
         "name": "giant",
@@ -55,7 +56,7 @@
                 "value": "cost"
             }
         ],
-        "img": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png"
+        "img": "./assets/giant.png"
     }, {
         "id": 4,
         "name": "goblin",
@@ -74,7 +75,7 @@
                 "value": "cost"
             }
         ],
-        "img": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png"
+        "img": "./assets/goblin.png"
     }, {
         "id": 5,
         "name": "wizard",
@@ -93,6 +94,27 @@
                 "value": "cost"
             }
         ],
-        "img": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png"
-    }]
+        "img": "./assets/wizard.png"
+    }],
+    "restricts": [{
+            "hero_id": 1,
+            "max": 659
+        },
+        {
+            "hero_id": 2,
+            "max": 311
+        },
+        {
+            "hero_id": 3,
+            "max": 247
+        },
+        {
+            "hero_id": 4,
+            "max": 908
+        },
+        {
+            "hero_id": 5,
+            "max": 148
+        }
+    ]
 }

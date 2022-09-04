@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function BuyFunction({ name }) {
+export default function BuyBtn({ name }) {
 
     function showAlert() {
         alert(name)
