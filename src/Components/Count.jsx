@@ -7,13 +7,13 @@ export default function Count() {
     function increment() {
         setTimeout(() => {
             setCount(prevCount => prevCount + 1)            
-        }, 2000)
+        }, 500)
     }
 
     function decrement() {
         setTimeout(() => {
             setCount(count - 1)
-        }, 2000)
+        }, 500)
     }
 
     useEffect(() => {
