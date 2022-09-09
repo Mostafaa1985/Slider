@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 export default function Count() {
     const [count, setCount] = useState(0)
 
-
+    
     function increment() {
         setTimeout(() => {
             setCount(prevCount => prevCount + 1)            
@@ -12,7 +12,7 @@ export default function Count() {
 
     function decrement() {
         setTimeout(() => {
-            setCount(count - 1)
+           if (count > 0 ) setCount( count - 1 ) 
         }, 500)
     }
 
