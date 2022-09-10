@@ -7,17 +7,7 @@ function Slider() {
     const [courser, setCourser] = useState(0)
 
     useEffect(() => {
-        // let req = new XMLHttpRequest()
-        // let response        
-        // req.open("GET", 'https://mocki.io/v1/9bf37bfc-9cf7-4902-922d-625fe2655ce7?heroes')
-        // req.send()
-        // // if (req.readyState === XMLHttpRequest.DONE)  
-        // setHeroes(response.heroes) 
-        // // response = JSON.parse(this.response)
-        // // (response => response.json())
-        // // (heroes => setHeroes(heroes))
-        // // console.log(heroes);
-        // getData()
+      
 
         fetch('https://mocki.io/v1/9bf37bfc-9cf7-4902-922d-625fe2655ce7?heroes')
             .then(response => response.json())
@@ -27,11 +17,6 @@ function Slider() {
 
     }, [])
 
-    // async function getData() {
-    //     await fetch('https://mocki.io/v1/9bf37bfc-9cf7-4902-922d-625fe2655ce7?heroes')
-    //         .then(response => response.json())
-    //         .then(response => setHeroes(response.heroes))
-    // }
 
     function handleNext() {
         const current = courser + 1 < heroes.length ? courser + 1 : 0
