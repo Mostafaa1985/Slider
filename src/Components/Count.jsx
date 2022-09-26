@@ -2,7 +2,7 @@ import React, { useEffect, useReducer } from 'react'
 
 
 const initState = {
-    barbarian: 1,
+    barbarian: 0,
     archer: 0,
     giant: 0,
     goblin: 0,
@@ -38,8 +38,7 @@ function reducer(state, action) {
 
             return state
     }
-
-    return state
+    
 }
 
 
