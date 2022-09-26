@@ -17,10 +17,6 @@ export default function Count() {
         }, 2000)
     }
 
-    useEffect(() => {
-        console.log('effect');
-    })
-
     return (
         <div className='counter'>
             <button onClick={decrement} className='bg-info'>-</button>
