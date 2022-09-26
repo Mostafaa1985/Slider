@@ -1,85 +1,30 @@
-import React, { useEffect, useReducer } from 'react'
+import React, { useState, useEffect } from 'react'
+
+export default function Count() {
+    const [count, setCount] = useState(0)
 
 
-const initState = {
-    barbarian: 0,
-    archer: 0,
-    giant: 0,
-    goblin: 0,
-    wizard: 0
-}
-
-
-const actionTypes = {
-    increment: 'increment',
-    decrement: 'decrement'
-}
-
-function reducer(state, action) { 
-
-    switch (action.type) {
-
-        case actionTypes.increment:
-            {
-                return {
-                    ...state,
-                    [action.name]: state[action.name]++
-                }
-            }
-
-        case 'decrement':
-            {
-                return {
-                    ...state,
-                    [action.name]: state[action.name] > 0 ? state[action.name]-- : 0
-                }
-            }
-        default:
-
-            return state
-    }
-    
-}
-
-
-export default function Count({ name, id }) {
-
-
-    const [state, dispatch] = useReducer(reducer, initState)
     function increment() {
         setTimeout(() => {
-            dispatch({
-                type: actionTypes.increment,
-                id: id,
-                name: name
-            })
-            console.log(state[name])
-            console.log(name)
-
-        }, 500)
-
+            setCount(prevCount => prevCount + 1)
+            console.log(count);
+        }, 2000)
     }
 
     function decrement() {
         setTimeout(() => {
-            dispatch({
-                type: actionTypes.decrement,
-                id:  id ,
-                name:  name 
-            })
-        }, 500)
+            setCount(count - 1)
+        }, 2000)
     }
 
-
-
-    useEffect(() => {        
-    }, [id])
-
+    useEffect(() => {
+        console.log('effect');
+    })
 
     return (
         <div className='counter'>
             <button onClick={decrement} className='bg-info'>-</button>
-            <p className='count'>{state[name]}</p>
+            <p className='count'>{count}</p>
             <button onClick={increment} className='bg-success'>+</button>
         </div>
     )
