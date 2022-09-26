@@ -20,7 +20,6 @@ function Slider() {
 
     function handleNext() {
         const current = courser + 1 < heroes.length ? courser + 1 : 0
-
         setCourser(current)
     }
 

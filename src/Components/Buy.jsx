@@ -7,7 +7,7 @@ function Buy({ name, id }) {
     return (
         <div className='buy-wrapper'>
             
-            <Count />
+            <Count id ={id} name ={name} />
             <BuyBtn name={name} />
         </div>
 
