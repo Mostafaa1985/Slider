@@ -54,6 +54,7 @@ export default function Count({ name, id }) {
                 name: name
             })
             console.log(state[name])
+            console.log(name)
 
         }, 500)
 
