@@ -53,7 +53,7 @@ export default function Count({ name, id }) {
                 id: id,
                 name: name
             })
-            console.log('netlify!!!!')
+            console.log(state[name])
 
         }, 500)
 
