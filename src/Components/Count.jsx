@@ -8,13 +8,13 @@ export default function Count() {
         setTimeout(() => {
             setCount(prevCount => prevCount + 1)
             console.log(count);
-        }, 2000)
+        }, 500)
     }
 
     function decrement() {
         setTimeout(() => {
             setCount(count - 1)
-        }, 2000)
+        }, 500)
     }
 
     return (
