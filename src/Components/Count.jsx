@@ -71,7 +71,7 @@ export default function Count({ name, id }) {
 
 
     useEffect(() => {        
-    }, [id, state])
+    }, [id])
 
 
     return (
